@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Habelia Foods | Home </title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+	  
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	  
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+	  <style>
+  /* Add drop shadow to text */
+  
+		  .sidemenu {
+			  position: relative;
+			  bottom: 65px;
+			  left: 750px;
+			  width: 100px
+		  }
+		  .desc {
+			  position: relative;
+			  top: 40px;
+			  font-family: 'Montserrat', sans-serif;
+			  font-weight: 300;
+			  font-size: 20px;
+			  text-align: center;
+			  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)
+		  }
+		  .viewmenu {
+			  position: relative;
+			  top: 90px;
+			  left: 400px;
+			  width: 100px;
+		  }
+		  .t2 {
+			  position: relative;
+			  color: #950000;
+			  bottom: 150px;
+		  }
+		   .t3 {
+			  position: relative;
+			  color: #FFF;
+			  bottom: 130px;
+		  }
+		  
+		  .tablepos {
+			  position: relative;
+			  width: 1100px;
+			  align: center;
+			  right: 155px;
+			  bottom: 100px;
+		  }
+		  .tablepos2 {
+			   position: relative;
+			  width: 1100px;
+			  align: center;
+			  right: 185px;
+			  bottom: 100px;
+		  }
+		  .tablepos3 {
+			   position: relative;
+			  width: 1100px;
+			  align: center;
+			  right: 185px;
+			  bottom: 100px;
+		  }
+		  .tablepos4 {
+			   position: relative;
+			  width: 1100px;
+			  align: center;
+			  right: 185px;
+			  bottom: 100px;
+		  }
+		  .viewmore {
+			  position: relative;
+			  bottom: 40px;
+			  left: 377px;
+		  }
+		  .footerlogo {
+			  position: relative;
+			  bottom: 150px;
+			  left: 345px;
+		  }
+		  .workplease {
+			  position: relative;
+			  bottom: 60px;
+			  right: 80px;
+		  }
+		  .copyright {
+			  position: relative;
+			  bottom: 60px;
+			  right: 80px;
+			  width: 300px;
+			  left: 325px
+		  }
+		  
+		  
+		  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+ </head> 
+	
+<body>
+
+
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><img src="img/logo.png" width="340" height="77" alt="Habelia Foods"/></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
+		<li><a href="#slide2" title="Next Section">Popular</a></li>
+		<li><a href="#slide3" title="Next Section">Featured</a></li>
+		<li><a  href="#slide4" title="Next Section">Menu</a></li>
+	</ul>
+</nav>
+	<div class="sidemenu"> <a href="index.html"><img src="img/sidemenu.png" width="222" height="41" alt="contact and orders"/></a>
+	</div>
+	</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+            <h1>Decatur's Top Class</h1>
+		    <h1>Latin American Restaurant</h1>
+		   
+		  <section class="desc"> Everyday from 12pm - 10pm, our mission is to bring the flavors and traditions of Latin American to your plate, creating a dining experience that is both authentic and unforgettable. </section>
+           
+			<div class="viewmenu"> <a  href="#slide4"><img src="img/calltoaction.png" width="159" height="53" alt="viewmenu"/></a>
+	      </div>
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <h1 class="t2">Most Popular</h1>
+			<table class="tablepos">
+			<tr>
+				<td><a href="index.html"><img src="img/pop1.png" width="419" height="552" alt="Argentina: Asado"/></a></td>
+			  <td><a href="index.html"><img src="img/pop2.png" width="420" height="551" alt="Dominican Republic: Mangú"/></a></td>
+				<td><a href="index.html"><img src="img/pop3.png" width="421" height="552" alt="Peru: Ceviche"/></a></td>
+			  </tr>
+			</table>
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			   <h1 class="t3">Featured</h1>
+			<table class="tablepos">
+			<tr>
+				<td><a href="index.html"><img src="img/fea1.png" width="417" height="551" alt="Paraguay: Sopa Paraguaya"/></a></td>
+			  <td><a href="index.html"><img src="img/fea2.png" width="417" height="549" alt="Panama: Sancocho"/></a></td>
+				<td><a href="index.html"><img src="img/fea3.png" width="418" height="549" alt="Nicaragua: Nacatamal"/></a></td>
+			  </tr>
+			</table>
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+              <h1 class="t2">Our Menu</h1>
+		  <table class="tablepos2">
+			<tr>
+				<td><a href="index.html"><img src="img/t1.png" width="660" height="208" alt="Argentina: Asado"/></a></td>
+			  <td><a href="index.html"><img src="img/t2.png" width="659" height="206" alt="Dominican Republic: Mangú"/></a></td>
+			  </tr>
+			</table>
+			<table class="tablepos3">
+			<tr>
+				<td><a href="index.html"><img src="img/t3.png" width="658" height="206" alt="Peru: Ceviche"/></a></td>
+			  <td><a href="index.html"><img src="img/t4.png" width="658" height="206" alt="Paraguay: Sopa Paraguaya"/></a></td>
+			  </tr>
+			</table>
+		  <table class="tablepos4">
+			<tr>
+				<td><a href="index.html"><img src="img/t5.png" width="659" height="208" alt="Panama: Sancocho"/></a></td>
+			  <td><a href="index.html"><img src="img/t6.png" width="658" height="206" alt="Nicaragua: Nacatamal"/></a></td>
+			  </tr>
+			</table>
+		
+			<div class="viewmore"> <a href="index.html"><img src="img/viewmore.png" width="204" height="67" alt="view more"/></a> 
+			</div>
+			</div> 
+    </div> 
+	
+<div id="slide5">
+		<div class="content">
+          
+			<div class="footerlogo"> <a href="index.html"><img src="img/logo.png" width="255" height="57.75" alt="habelia foods"/></a>
+			</div>
+			
+			<nav class="workplease">
+			<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
+		<li><a href="#slide2" title="Next Section">Popular</a></li>
+		<li><a href="#slide3" title="Next Section">Featured</a></li>
+		<li><a  href="#slide4" title="Next Section">Menu</a></li>
+	</ul>
+</nav>
+				</nav>
+			<p class="copyright"> © Copyright 2023 Habelia Foods LLC </p>
+			<p class="copyright"> 4224 Prospect Dr, Decatur, IL 62526 </p>
+		</div> 
+  </div> 
+	
+<!----- SLIDES END --->
+
+</body>
+</html>
