@@ -1,254 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <title>Habelia Foods | Home </title>
-       <link rel="stylesheet" href="css/style.css"/>
-	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
-	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
-	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
-	  
-	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	  
-	<script>
-   
-<!----- JQUERY FOR SLIDING NAVIGATION --->   
-$(document).ready(function() {
-  $('a[href*=#]').each(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hope For Children Foundation</title>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
 
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-         $(this).click(function() {
-            $("#nav li a").removeClass("active");
-            $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-      }
-    }
-  });
-
-});
-
-
-</script>
-
-	  <style>
-  /* Add drop shadow to text */
-  
-		  .sidemenu {
-			  position: relative;
-			  bottom: 65px;
-			  left: 750px;
-			  width: 100px
-		  }
-		  .desc {
-			  position: relative;
-			  top: 40px;
-			  font-family: 'Montserrat', sans-serif;
-			  font-weight: 300;
-			  font-size: 20px;
-			  text-align: center;
-			  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)
-		  }
-		  .viewmenu {
-			  position: relative;
-			  top: 90px;
-			  left: 400px;
-			  width: 100px;
-		  }
-		  .t2 {
-			  position: relative;
-			  color: #950000;
-			  bottom: 150px;
-		  }
-		   .t3 {
-			  position: relative;
-			  color: #FFF;
-			  bottom: 130px;
-		  }
-		  
-		  .tablepos {
-			  position: relative;
-			  width: 1100px;
-			  align: center;
-			  right: 155px;
-			  bottom: 100px;
-		  }
-		  .tablepos2 {
-			   position: relative;
-			  width: 1100px;
-			  align: center;
-			  right: 185px;
-			  bottom: 100px;
-		  }
-		  .tablepos3 {
-			   position: relative;
-			  width: 1100px;
-			  align: center;
-			  right: 185px;
-			  bottom: 100px;
-		  }
-		  .tablepos4 {
-			   position: relative;
-			  width: 1100px;
-			  align: center;
-			  right: 185px;
-			  bottom: 100px;
-		  }
-		  .viewmore {
-			  position: relative;
-			  bottom: 40px;
-			  left: 377px;
-		  }
-		  .footerlogo {
-			  position: relative;
-			  bottom: 150px;
-			  left: 345px;
-		  }
-		  .workplease {
-			  position: relative;
-			  bottom: 60px;
-			  right: 80px;
-		  }
-		  .copyright {
-			  position: relative;
-			  bottom: 60px;
-			  right: 80px;
-			  width: 300px;
-			  left: 325px
-		  }
-		  
-		  
-		  h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+	<link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
+	
+<style type="text/css">
+#wrapper {
+		height: 2250px;
+	}
+	
+	body {
+	background-color: #E8E8E8;
+}
+	.headerpos {
+		position: relative;
+		left: 20px;
+		top: 25px;
+	}
+	.logopos {
+		position: relative;
+		top: 5px;
+		left: 300px;
+	}
+	.pages {
+		position: relative;
+		left: 850px;
+		bottom: 55px;
+		color: #000000;	
+	}
+	.donate {
+		position: relative;
+		left: 1350px;
+		bottom: 170px;
+	}
+	.joinus {
+		position: relative;
+		top: 15px;
+		left: 50px;
+		font-size: 40px;
+	}
+	.joinusdesc {
+		position: relative;
+		left: 50px;	
+	}
+	.img1 {
+		position: relative;
+		bottom: 450px;
+		left: 700px;
+	}
+	.ourevents {
+		position: relative;
+		bottom: 450px;
+		left: 450px;
+		font-size: 40px;
+	}
+	.gala2019 {
+		position: relative;
+		bottom: 450px;
+		left: 970px;
+		font-size: 40px;
+	}
+	.galadesc {
+		position: relative;
+		left: 680px;
+		top: -465px;
+		text-align: right;
+		width: 400px;
+	}
+	.videoembed1 {
+		position: relative;
+		left: 50px;
+		top: -1000px;
+	}
+	.toydrive {
+		position: relative;
+		bottom: 950px;
+		left: 50px;
+		font-size: 40px;
+	}
+	.toydrivedesc {
+		position: relative;
+		left: 50px;
+		top: -970px;
+		text-align: left;
+		width: 400px;
+	}
+	.videoembed2 {
+		position: relative;
+		left: 620px;
+		top: -1550px;
+	}
+	.sponsorpos {
+		position: relative;
+		left: 20px;
+		bottom: 1630px
+	}
+	.footerpos {
+		position: relative;
+		top: 120px;	
+	}
+	.footerlogo {
+		position: relative;
+		left: 800px;
+		top: 50px;
+	}
+	.footerpages {
+		position: relative;
+		right: 25px;
+		top: 70px;
+		color: #000000;
+	}
+	.viewall {
+		position: relative;
+		bottom: 1055px;
+		left: 490px;
+		z-index: 9998;
+	}
+	.copyright {
+		position: relative;
+		top: 90px;
+		left: 750px;
+		z-index: 9998;
+	}
 </style>
-
- </head> 
+<link href="global.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+	
+</head>
+<!-- header starts //--> 
+<header>
+  <div class="logopos">
+	<a href="index.html"><img src="modified/logo.png" width="243" height="67" alt="Hope For Children Logo"/></a>
+</div>
+  <div class="pages">
+	<nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+	</div>
+  <div class="donate"><a href="donate.html"><img src="buttons/donate.png" width="174" height="57" alt=""/></a>
+	</div>
+	
+</header>
+<!-- header ends //--> 
 	
 <body>
+<!-- wrapper starts //--> 
+<div id="wrapper">
+<!-- nav starts //--> 
+  <div class="headerpos">
+	<img src="Header imgs/psheader1.png" width="1100" height="400" alt="Hope For Children"/>
+  </div>
+  
+  <p class="joinus"> Join Us</p>
+	
+  <!-- nav ends //--> 
+ 
+<!-- section starts //-->
+<section class="joinusdesc">By donating to Hope for Children Foundation, you can help make a positive impact on the lives of vulnerable children and their families worldwide. Your donation can help provide education, healthcare, and basic needs to children who might not otherwise have access to these essential resources. With your support, the foundation can continue to create sustainable solutions that combat poverty, abuse, and neglect in communities around the world. Your contribution, no matter how big or small, can make a difference in the life of a child. So why not give the gift of hope today? Your donation can help transform a child's life and create a brighter future for generations to come.  </section> 
 
-
-<!----- HEADER START--->   
-<header id="header">
-<div class="content">
-<div id="logo"><img src="img/logo.png" width="340" height="77" alt="Habelia Foods"/></div>
-
-<nav id="nav">
-	<ul>
-		<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
-		<li><a href="#slide2" title="Next Section">Popular</a></li>
-		<li><a href="#slide3" title="Next Section">Featured</a></li>
-		<li><a  href="#slide4" title="Next Section">Menu</a></li>
-	</ul>
-</nav>
-	<div class="sidemenu"> <a href="index.html"><img src="img/sidemenu.png" width="222" height="41" alt="contact and orders"/></a>
+	<div class="img1">
+    <img src="modified/img1.png" width="400" height="300" alt=""/> </div>
+	
+	<p class="ourevents"> Our Events</p>
+	<p class="gala2019"> GALA</p>
+	
+	<section class="galadesc">What is the Hope for Children Annual Gala? The Hope for Children Annual Gala is a charity social occasion with stunning entertainment, events and special performances  which bring large numbers of guests. You may experience a refreshing music filled evening at the Hope for Children Annual Gala. </section> 
+	
+	<div class="videoembed1">
+	<iframe src="https://player.vimeo.com/video/389037743?h=4731d4518e" width="460" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 	</div>
+	
+	<p class="toydrive"> Toy Drive</p>
+	
+	<section class="toydrivedesc">What is the Hope for Children Foundation Annual Toy Drive? The Hope for Children Foundation Annual Toy Drive is a charity event to serve children and families who are need special attention and extra love.</section> 
+	
+  <div class="videoembed2">
+	<iframe src="https://player.vimeo.com/video/389039243?h=bd0e857309" width="460" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	
+	<div class="viewall"> <a href="https://hopeforchildrenfoundation.org/sponsors/"><img src="buttons/view-all.png" width="174" height="56" alt=""/></a>  <!-- section ends //--> 
 	</div>
-</header>	
-<!----- HEADER END--->   
-
-<!----- SLIDES START --->   	
-	<div id="slide1">
-		<div class="content">
-            <h1>Decatur's Top Class</h1>
-		    <h1>Latin American Restaurant</h1>
-		   
-		  <section class="desc"> Everyday from 12pm - 10pm, our mission is to bring the flavors and traditions of Latin American to your plate, creating a dining experience that is both authentic and unforgettable. </section>
-           
-			<div class="viewmenu"> <a  href="#slide4"><img src="img/calltoaction.png" width="159" height="53" alt="viewmenu"/></a>
-	      </div>
-		</div> 
-    </div> 
-
-	<div id="slide2">
-		<div class="content" >
-            <h1 class="t2">Most Popular</h1>
-			<table class="tablepos">
-			<tr>
-				<td><a href="index.html"><img src="img/pop1.png" width="419" height="552" alt="Argentina: Asado"/></a></td>
-			  <td><a href="index.html"><img src="img/pop2.png" width="420" height="551" alt="Dominican Republic: Mangú"/></a></td>
-				<td><a href="index.html"><img src="img/pop3.png" width="421" height="552" alt="Peru: Ceviche"/></a></td>
-			  </tr>
-			</table>
-		</div> 
-    </div> 
-	
-	
-   <div id="slide3">
-		<div class="content">
-			   <h1 class="t3">Featured</h1>
-			<table class="tablepos">
-			<tr>
-				<td><a href="index.html"><img src="img/fea1.png" width="417" height="551" alt="Paraguay: Sopa Paraguaya"/></a></td>
-			  <td><a href="index.html"><img src="img/fea2.png" width="417" height="549" alt="Panama: Sancocho"/></a></td>
-				<td><a href="index.html"><img src="img/fea3.png" width="418" height="549" alt="Nicaragua: Nacatamal"/></a></td>
-			  </tr>
-			</table>
-		</div> 
-    </div> 
-	
-	
-	<div id="slide4">
-		<div class="content">
-              <h1 class="t2">Our Menu</h1>
-		  <table class="tablepos2">
-			<tr>
-				<td><a href="index.html"><img src="img/t1.png" width="660" height="208" alt="Argentina: Asado"/></a></td>
-			  <td><a href="index.html"><img src="img/t2.png" width="659" height="206" alt="Dominican Republic: Mangú"/></a></td>
-			  </tr>
-			</table>
-			<table class="tablepos3">
-			<tr>
-				<td><a href="index.html"><img src="img/t3.png" width="658" height="206" alt="Peru: Ceviche"/></a></td>
-			  <td><a href="index.html"><img src="img/t4.png" width="658" height="206" alt="Paraguay: Sopa Paraguaya"/></a></td>
-			  </tr>
-			</table>
-		  <table class="tablepos4">
-			<tr>
-				<td><a href="index.html"><img src="img/t5.png" width="659" height="208" alt="Panama: Sancocho"/></a></td>
-			  <td><a href="index.html"><img src="img/t6.png" width="658" height="206" alt="Nicaragua: Nacatamal"/></a></td>
-			  </tr>
-			</table>
 		
-			<div class="viewmore"> <a href="index.html"><img src="img/viewmore.png" width="204" height="67" alt="view more"/></a> 
-			</div>
-			</div> 
-    </div> 
-	
-<div id="slide5">
-		<div class="content">
-          
-			<div class="footerlogo"> <a href="index.html"><img src="img/logo.png" width="255" height="57.75" alt="habelia foods"/></a>
-			</div>
-			
-			<nav class="workplease">
-			<nav id="nav">
-	<ul>
-		<li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
-		<li><a href="#slide2" title="Next Section">Popular</a></li>
-		<li><a href="#slide3" title="Next Section">Featured</a></li>
-		<li><a  href="#slide4" title="Next Section">Menu</a></li>
-	</ul>
-</nav>
-				</nav>
-			<p class="copyright"> © Copyright 2023 Habelia Foods LLC </p>
-			<p class="copyright"> 4224 Prospect Dr, Decatur, IL 62526 </p>
-		</div> 
-  </div> 
-	
-<!----- SLIDES END --->
+	<div class="sponsorpos">
+  <img src="modified/sponsors.png" width="1100" height="638" alt=""/>  <!-- footer starts //-->
 
+</div>
+<!-- footer ends //--> 
+
+
+</div>
+<!-- wrapper ends //--> 
 </body>
+<footer class="footerpos">
+	<div class="footerlogo">
+	<img src="modified/logo.png" width="243" height="67" alt="Hope For Children"/>
+	</div>
+	
+	<div class="footerpages">
+	<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+	</div>
+	
+	<div class="copyright">
+	<p> Copyright Hope For Children Foundation © 2023</p>
+	</div>
+</footer> 
 </html>
